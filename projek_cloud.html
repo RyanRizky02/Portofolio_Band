@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOFFMAN | Garage Rock</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+    :root {
+      --bg: #0a0014;
+      --accent1: #a855f7;
+      --accent2: #6d28d9;
+      --text: #e5e5e5;
+      --muted: #9ca3af;
+      --accent-glow: 0 0 20px rgba(168, 85, 247, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    }
+
+    /* === Logo Image Style === */
+    .logo-img {
+      height: 64px;
+      width: 64px;
+      border-radius: 10px;
+      object-fit: contain;
+      background: linear-gradient(135deg, var(--accent1), #4c1d95);
+      box-shadow: var(--accent-glow);
+      padding: 6px;
+      transition: 0.3s;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 10px var(--accent1));
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent1);
+    }
+
+    .cta {
+      background: var(--accent1);
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .cta:hover {
+      background: var(--accent2);
+    }
+
+    section {
+      padding: 80px 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--accent1);
+      margin-bottom: 20px;
+    }
+
+    /* === Members Section === */
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .member {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    }
+
+    .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent1);
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+
+    .member img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--accent1);
+    }
+
+    .member strong {
+      display: block;
+      font-size: 18px;
+      color: var(--accent1);
+    }
+
+    .member span {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="Artboard.png" alt="LOFFMAN Logo" class="logo-img">
+      <div>
+        <div style="font-weight:800;font-size:18px">LOFFMAN</div>
+        <div style="font-size:12px;color:var(--muted)">Garage Rock • Loud & Raw</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#members">Anggota</a>
+      <a href="#music">Musik</a>
+      <a href="#tour">Tour</a>
+      <a class="cta" href="#contact">Contact / Booking</a>
+    </nav>
+  </header>
+
+  <section id="bio">
+    <h1>Tentang LOFFMAN</h1>
+    <p>LOFFMAN adalah band Garage Rock dengan nuansa raw, energi liar, dan distorsi yang membakar. Terbentuk dari semangat bawah tanah, kami percaya bahwa musik bukan hanya suara — tapi cara hidup.</p>
+  </section>
+
+  <section id="members">
+    <h2>Anggota Band</h2>
+    <div class="members">
+      <div class="member">
+        <img src="vocalis.jpg" alt="Ryan - Vokal">
+        <strong>Ryan</strong>
+        <span>Vokal</span>
+      </div>
+      <div class="member">
+        <img src="gitaris1.jpg" alt="Bung Lang - Gitar">
+        <strong>Bung Lang</strong>
+        <span>Gitar</span>
+      </div>
+      <div class="member">
+        <img src="bassist.jpg" alt="John - Bass">
+        <strong>John</strong>
+        <span>Bass</span>
+      </div>
+      <div class="member">
+        <img src="drummer.jpg" alt="Rehan - Drum">
+        <strong>Rehan</strong>
+        <span>Drum</span>
+      </div>
+      <div class="member">
+        <img src="gitaris2.jpg" alt="Dimas - Gitaris">
+        <strong>Dimas</strong>
+        <span>Gitaris</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>Discography</h2>
+    <p>Putar salah satu lagu terbaru kami di bawah ini:</p>
+    <audio controls>
+      <source src="music/loffman-demo.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung pemutar audio.
+    </audio>
+  </section>
+
+  <section id="tour">
+    <h2>Jadwal Main</h2>
+    <ul>
+      <li>🔥 09 November 2025 - Teknik Gigs</li>
+      <li>⚡ ? Desember 2025 - COMFEST</li>
+      <li>🎸 5 Juni 2026 - Yogyakarta Underground</li>
+    </ul>
+  </section>
+
+   <section id="contact">
+    <h2>Follow Kami di Instagram</h2>
+    <p>Untuk info terbaru, jadwal tur, dan behind-the-scenes:</p>
+    <a href="https://instagram.com/loffman.official" target="_blank" class="instagram-link">
+      @loffman.official
+    </a>
+  </section>
+
+  <footer>
+    © 2025 LOFFMAN — Garage Rock Indonesia.
+  </footer>
+
+</body>
+</html>
